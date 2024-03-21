@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: testpython0321-repository
+spec:
+  url: https://github.com/xjiangorg/testpython0321

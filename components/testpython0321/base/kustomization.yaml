@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: testpython0321
+  janus-idp.io/tekton: testpython0321
+  backstage.io/kubernetes-id: testpython0321
+  backstage.io/kubernetes-namespace: testpython0321 
+  app.kubernetes.io/part-of: testpython0321
+resources: 
+- deployment.yaml
+- route.yaml
+- service.yaml
